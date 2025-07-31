@@ -38,7 +38,7 @@ const About = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-r from-primary/70 to-rose-gold/60"></div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">About Belle Salon</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">About Style Station</h1>
           <p className="text-xl md:text-2xl text-gray-100">
             Where passion meets expertise
           </p>
