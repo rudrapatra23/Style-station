@@ -4,10 +4,10 @@ import teamHero from "@/assets/team-hero.jpg";
 
 const About = () => {
   const stats = [
-    { icon: <Users className="h-8 w-8 text-primary" />, number: "15+", label: "Expert Stylists" },
+    { icon: <Users className="h-8 w-8 text-primary" />, number: "5+", label: "Expert Stylists" },
     { icon: <Calendar className="h-8 w-8 text-primary" />, number: "2+", label: "Years Experience" },
     { icon: <Heart className="h-8 w-8 text-primary" />, number: "5000+", label: "Happy Clients" },
-    { icon: <Award className="h-8 w-8 text-primary" />, number: "25+", label: "Awards Won" },
+    { icon: <Award className="h-8 w-8 text-primary" />, number: "3", label: "Awards Won" },
   ];
 
   const values = [
@@ -52,12 +52,12 @@ const About = () => {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-foreground">Our Story</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Founded in 2023, Belle Salon began as a dream to create a space where beauty and artistry 
+                Founded in 2023, Style Station Salon began as a dream to create a space where beauty and artistry 
                 could flourish. What started as a small neighborhood salon has grown into a premier 
                 destination for hair, beauty, and wellness services.
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Our founder, Isabella Martinez, envisioned a salon that would not just provide services, 
+                Our founder, Barnali, envisioned a salon that would not just provide services, 
                 but create experiences. A place where every client would feel pampered, valued, and 
                 transformed. Today, that vision continues to guide everything we do.
               </p>
