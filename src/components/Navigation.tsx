@@ -49,7 +49,7 @@ const Navigation = () => {
           <div className="hidden md:block">
   <Button className="bg-gradient-to-r from-primary to-rose-gold hover:opacity-90">
     <a
-      href="https://forms.gle/your_google_form_id"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSdExoJtwK0KCOOTTcVFv7xe0LLlwZEnf4ncQCYvchDeHU9TDw/viewform?usp=header"
       target="_blank"
       rel="noopener noreferrer"
       className="text-white"

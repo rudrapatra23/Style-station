@@ -66,7 +66,7 @@ const Home = () => {
               size="lg"
               className="bg-white text-primary hover:bg-gray-100 text-lg px-8 py-6"
             >
-              Book Appointment
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdExoJtwK0KCOOTTcVFv7xe0LLlwZEnf4ncQCYvchDeHU9TDw/viewform?usp=header">Book Appointment</a>
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button

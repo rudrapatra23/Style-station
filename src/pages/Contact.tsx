@@ -80,7 +80,7 @@ const Contact = () => {
     className="bg-gradient-to-r from-primary to-rose-gold text-white text-lg px-8 py-6 hover:opacity-90"
   >
     <a
-      href="https://your_google_form_link_here"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSdExoJtwK0KCOOTTcVFv7xe0LLlwZEnf4ncQCYvchDeHU9TDw/viewform?usp=header"
       target="_blank"
       rel="noopener noreferrer"
     >
