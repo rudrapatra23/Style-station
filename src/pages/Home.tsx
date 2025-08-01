@@ -28,17 +28,17 @@ const Home = () => {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
+      name: "Neha Thakur",
       text: "The best salon experience I've ever had! My stylist understood exactly what I wanted.",
       rating: 5,
     },
     {
-      name: "Emily Davis",
+      name: "Saloni Padda",
       text: "Professional, clean, and absolutely beautiful results every time I visit.",
       rating: 5,
     },
     {
-      name: "Maria Rodriguez",
+      name: "Shubham Bhunia",
       text: "The atmosphere is so relaxing and the staff is incredibly talented.",
       rating: 5,
     },
