@@ -32,12 +32,20 @@ const Contact = () => {
   {
     icon: <Phone className="h-6 w-6 text-primary" />,
     title: "Call Us",
-    details: ["935409512", "Text: 935409512"],
+    details: [
+      <div>
+  <a href="tel:935409512">Call Us: 935409512</a>
+  <a href="sms:935409512">Text Us: 935409512</a>
+</div>],
   },
   {
     icon: <Mail className="h-6 w-6 text-primary" />,
     title: "Email Us",
-    details: ["Soumenbhunia172@gmail.com"],
+    details: [
+      <a
+        key="email"
+        href="mailto:Soumenbhunia172@gmail.com">Soumenbhunia172@gmail.com</a>
+    ],
   },
   {
     icon: <Clock className="h-6 w-6 text-primary" />,
