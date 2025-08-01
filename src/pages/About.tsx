@@ -52,7 +52,7 @@ const About = () => {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-foreground">Our Story</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Founded in 2013, Belle Salon began as a dream to create a space where beauty and artistry 
+                Founded in 2023, Belle Salon began as a dream to create a space where beauty and artistry 
                 could flourish. What started as a small neighborhood salon has grown into a premier 
                 destination for hair, beauty, and wellness services.
               </p>
