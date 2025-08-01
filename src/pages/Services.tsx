@@ -14,7 +14,7 @@ const Services = () => {
       services: [
         { name: "Haircut & Style",  popular: true },
         { name: "Hair Color", popular: true },
-        { name: "Highlights, popular: false },
+        { name: "Highlights", popular: false },
         { name: "Balayage", popular: true },
         { name: "Hair Extensions", popular: false },
         { name: "Deep Conditioning", popular: false },
@@ -29,7 +29,7 @@ const Services = () => {
         { name: "Anti-Aging Facial", popular: true },
         { name: "Hydrating Facial", popular: false },
         { name: "Acne Treatment", popular: false },
-        { name: "Chemical Peel, popular: false },
+        { name: "Chemical Peel", popular: false },
         { name: "Microdermabrasion", popular: false },
       ],
     },
@@ -150,9 +150,6 @@ const Services = () => {
                             </Badge>
                           )}
                         </div>
-                        <span className="text-primary font-semibold">
-                          {service.price}
-                        </span>
                       </div>
                     ))}
                   </div>
