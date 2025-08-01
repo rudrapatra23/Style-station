@@ -5,7 +5,7 @@ import teamHero from "@/assets/team-hero.jpg";
 const About = () => {
   const stats = [
     { icon: <Users className="h-8 w-8 text-primary" />, number: "15+", label: "Expert Stylists" },
-    { icon: <Calendar className="h-8 w-8 text-primary" />, number: "10+", label: "Years Experience" },
+    { icon: <Calendar className="h-8 w-8 text-primary" />, number: "2+", label: "Years Experience" },
     { icon: <Heart className="h-8 w-8 text-primary" />, number: "5000+", label: "Happy Clients" },
     { icon: <Award className="h-8 w-8 text-primary" />, number: "25+", label: "Awards Won" },
   ];
