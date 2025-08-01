@@ -37,7 +37,7 @@ const Contact = () => {
   {
     icon: <Mail className="h-6 w-6 text-primary" />,
     title: "Email Us",
-    details: ["info@xyz.com", "bookings@xyz.com"],
+    details: ["Soumenbhunia172@gmail.com"],
   },
   {
     icon: <Clock className="h-6 w-6 text-primary" />,
