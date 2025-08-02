@@ -34,8 +34,8 @@ const Contact = () => {
     title: "Call Us",
     details: [
       <div>
-  <a href="tel:935409512">Call Us: 935409512</a>
-  <a href="sms:935409512">Text Us: 935409512</a>
+  <a href="tel:9354095162">Call Us: 9354095162</a>
+  <a href="sms:9354095162">Text Us: 9354095162</a>
 </div>],
   },
   {
