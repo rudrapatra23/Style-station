@@ -240,7 +240,7 @@ const Contact = () => {
             className="bg-gradient-to-r from-primary to-rose-gold hover:opacity-90"
           >
             <Phone className="mr-2 h-5 w-5" />
-            <a href="tel:935409512">Call Now: 935409512</a>
+            <a href="tel:9354095162">Call Now: 9354095162</a>
           </Button>
         </div>
       </section>
