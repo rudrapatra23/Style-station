@@ -226,7 +226,7 @@ const Services: React.FC = () => {
               className="bg-white text-primary hover:bg-gray-100 text-lg px-8 py-6 flex items-center justify-center"
               asChild
             >
-              <a href="tel:935409512">Call Us: 935409512</a>
+              <a href="tel:9354095162">Call Us: 9354095162</a>
             </Button>
           </div>
         </div>
