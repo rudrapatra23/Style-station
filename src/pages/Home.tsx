@@ -1,10 +1,14 @@
+import { useState, useEffect } from "react";
 import { ArrowRight, Star, Users, Award, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import salonHero from "@/assets/salon-hero.jpg";
 
 const Home = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
   const features = [
     {
       icon: <Users className="h-8 w-8 text-primary" />,
@@ -44,6 +48,23 @@ const Home = () => {
     },
   ];
 
+  // Scroll to contact section if URL contains #contact-section
+  useEffect(() => {
+    if (location.hash === "#contact-section") {
+      const el = document.getElementById("contact-section");
+      el?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location]);
+
+  const handleScrollToContact = () => {
+    if (location.pathname !== "/contact") {
+      navigate("/contact#contact-section");
+    } else {
+      const el = document.getElementById("contact-section");
+      el?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="pt-16">
       {/* Hero Section */}
@@ -64,9 +85,10 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-white text-primary hover:bg-gray-100 text-lg px-8 py-6"
+              className="bg-white text-primary hover:bg-gray-100 text-lg px-8 py-6 flex items-center"
+              onClick={handleScrollToContact}
             >
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdExoJtwK0KCOOTTcVFv7xe0LLlwZEnf4ncQCYvchDeHU9TDw/viewform?usp=header">Book Appointment</a>
+              Book Appointment
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button
@@ -75,7 +97,7 @@ const Home = () => {
               asChild
             >
               <Link to="/services">
-                View services
+                View Services
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
@@ -91,8 +113,7 @@ const Home = () => {
               Why Choose Style Station Salon?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Experience the difference with our commitment to excellence and
-              personalized service
+              Experience the difference with our commitment to excellence and personalized service
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -122,7 +143,7 @@ const Home = () => {
               What Our Clients Say
             </h2>
             <p className="text-xl text-muted-foreground">
-              Don't just take our word for it - hear from our satisfied clients
+              Don't just take our word for it – hear from our satisfied clients
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -141,7 +162,7 @@ const Home = () => {
                     "{testimonial.text}"
                   </p>
                   <p className="font-semibold text-foreground">
-                    - {testimonial.name}
+                    – {testimonial.name}
                   </p>
                 </CardContent>
               </Card>
@@ -157,18 +178,15 @@ const Home = () => {
             Ready for Your Transformation?
           </h2>
           <p className="text-xl mb-8 text-gray-100">
-            Book your appointment today and let our expert team help you look
-            and feel your best
+            Book your appointment today and let our expert team help you look and feel your best
           </p>
           <Button
             size="lg"
-            className="bg-white text-primary hover:bg-gray-100 text-lg px-8 py-6"
-            asChild
+            className="bg-white text-primary hover:bg-gray-100 text-lg px-8 py-6 flex items-center justify-center"
+            onClick={handleScrollToContact}
           >
-            <Link to="/contact">
-              Schedule Now
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+            Schedule Now
+            <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
       </section>

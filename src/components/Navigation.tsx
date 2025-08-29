@@ -16,6 +16,19 @@ const Navigation = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
+  const handleBookNowClick = () => {
+    // Close mobile menu if open
+    setIsOpen(false);
+    
+    // Small delay to allow navigation to complete before scrolling
+    setTimeout(() => {
+      const contactElement = document.getElementById("contact");
+      if (contactElement) {
+        contactElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
+
   return (
     <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,20 +58,16 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* Book Appointment Button */}
+          {/* Book Appointment Button - Desktop */}
           <div className="hidden md:block">
-  <Button className="bg-gradient-to-r from-primary to-rose-gold hover:opacity-90">
-    <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLSdExoJtwK0KCOOTTcVFv7xe0LLlwZEnf4ncQCYvchDeHU9TDw/viewform?usp=header"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-white"
-    >
-      Book Now
-    </a>
-  </Button>
-</div>
-
+            <Link
+              to="/contact"
+              className="inline-block text-center bg-gradient-to-r from-primary to-rose-gold text-white px-6 py-3 rounded-md hover:opacity-90 transition-opacity"
+              onClick={handleBookNowClick}
+            >
+              Book Now
+            </Link>
+          </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -67,6 +76,7 @@ const Navigation = () => {
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
               className="text-foreground"
+              aria-label="Toggle mobile menu"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -92,9 +102,14 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <Button className="w-full bg-gradient-to-r from-primary to-rose-gold hover:opacity-90">
-                  Book Now
-                </Button>
+                <Link
+                  to="/contact"
+                  onClick={handleBookNowClick}
+                >
+                  <Button className="w-full bg-gradient-to-r from-primary to-rose-gold hover:opacity-90 transition-opacity">
+                    Book Now
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
